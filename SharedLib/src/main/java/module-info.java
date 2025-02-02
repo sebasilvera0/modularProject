@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/module-info.java to edit this template
  */
 
-module SharedLib {
+module SharedLib { 
     exports com.mycompany.Common;
+    
 }

@@ -12,7 +12,11 @@ import com.mycompany.Common.CommounUtility;
  */
 public class ConsoleApp {
 
+    
     public static void main(String[] args) {
         String appName = CommounUtility.getAppName();
+        
+        miClase obj = new miClase();
+        
     }
 }
