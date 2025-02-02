@@ -1,12 +1,15 @@
-// En SharedLib, la implementación de MyService
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.mycompany.Common;
 
-import org.springframework.stereotype.Service;
 
-@Service
-public class MyServiceImpl implements MyService {
+class MyServiceImpl implements MyService {
+    
     @Override
     public void execute() {
-        System.out.println("Ejecutando el servicio...");
+        // Lógica específica para la ejecución
+        System.out.println("Ejecutando servicio...");
     }
 }

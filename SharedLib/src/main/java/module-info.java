@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/module-info.java to edit this template
  */
 
-module SharedLib { 
+module SharedLib {
+    requires spring.context;   
     exports com.mycompany.Common;
     
 }

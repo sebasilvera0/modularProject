@@ -5,6 +5,7 @@
 
 module ConsoleApp {
     requires SharedLib;
+    requires spring.context;
 }
         
         

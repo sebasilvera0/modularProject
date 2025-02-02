@@ -1,19 +1,21 @@
 package com.mycompany.controller;
 
-import com.mycompany.common.MyService;
-import java.util.ServiceLoader;
+import com.mycompany.Common.MyService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class MyController {
+
     private MyService myService;
 
-    public MyController() {
-        // Cargar la implementación de MyService dinámicamente
-        ServiceLoader<MyService> loader = ServiceLoader.load(MyService.class);
-        myService = loader.findFirst().orElseThrow(() -> new RuntimeException("No se encontró un servicio MyService"));
+    @Autowired
+    public MyController(MyService myService) {
+        this.myService = myService;
     }
 
-    public void doSomething() {
-        System.out.println("Controlador ejecutando servicio...");
-        myService.execute(); // Llamar a la implementación oculta de MyService
+    public void executeService() {
+        System.out.println("Invocando el servicio...");
+        myService.execute();
     }
 }
